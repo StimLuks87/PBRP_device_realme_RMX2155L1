@@ -1,0 +1,29 @@
+# Brand
+Build.BRAND=MTK
+
+# Additional System Properties
+ro.mediatek.platform=MT6785
+ro.hardware=mt6785
+ro.product.device=RMX2155L1
+
+# USB
+ro.secure=0
+ro.adb.secure=0
+ro.debuggable=1
+ro.sys.usb.bicr=yes
+ro.sys.usb.charging.only=yes
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp,mass_storage
+persist.sys.isUsbOtgEnabled=true
+persist.sys.usb.config=mtp,adb
+
+# Storage
+persist.sys.fuse.passthrough.enable=true
+
+# Charger
+ro.charger.enable_suspend=true
+
+# Display
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
+ro.opengles.version=196610
