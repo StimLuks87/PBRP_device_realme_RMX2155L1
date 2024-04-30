@@ -207,10 +207,7 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libashmemd_client.so
 
 ##** TWRP Configuration	**##
-TW_CLOCK_OFFSET := "PAKST-5;PAKDT"	
-TW_TIME_ZONE_VAR := "PAKST-5;PAKDT"
-TW_TIME_ZONE_GUISEL := "PAKST-5;PAKDT"	
-TW_MILITARY_TIME := 1																																																																					
+TW_CLOCK_OFFSET := "PAKST-5;PAKDT"																																																																							
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXTRA_LANGUAGES := false
@@ -239,17 +236,13 @@ TW_MILITARY_TIME := true
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 TW_LOAD_VENDOR_BOOT_MODULES := true
-#TW_LOAD_VENDOR_MODULES := "fpsgo.ko wlan_drv_gen4m.ko wmt_chrdev_wifi.ko wmt_drv.ko"
+TW_FORCE_CPUINFO_FOR_DEVICE_ID := true
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true 
 #TW_NEVER_UNMOUNT_SYSTEM := true
 #TW_USE_NEW_MINADBD := true
 #TW_NO_BIND_SYSTEM := true
 #TW_SKIP_ADDITIONAL_FSTAB := true
 #TW_FORCE_KEYMASTER_VER := true
-TW_FORCE_CPUINFO_FOR_DEVICE_ID := true
-TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true 
-#TW_SUPPORT_INPUT_1_2_HAPTICS := true
-#TW_FORCE_USE_BUSYBOX := true
-#TW_EXCLUDE_SUPERSU := true
 
 ##** Resolution **##
 TW_THEME := portrait_hdpi
@@ -282,6 +275,7 @@ PB_DISABLE_DEFAULT_TREBLE_COMP := true
 PB_TORCH_PATH := "/sys/class/flashlight/mt-flash-led1/torch_brightness"
 PB_TORCH_MAX_BRIGHTNESS := 1
 PB_OFFICIAL := true
+PB_DISABLE_DEFAULT_DM_VERITY := true
 
 ##** Version/Maintainer **##
 MAINTAINER := Stim@Luks
